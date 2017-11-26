@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedtext"
+                android:layoutDirection="ltr">
+
+
+
+    <ImageView
+        android:id="@+id/subject"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/roundedtext"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#9A173E"/>
+
+    <com.amirahmed.mykids.Utils.TextViewWithFont
+        android:id="@+id/day"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:text="Sunday"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+
+    <com.amirahmed.mykids.Utils.TextViewWithFont
+        android:id="@+id/date"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        android:text="9 November"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#9A173E"/>
+
+
+    <com.amirahmed.mykids.Utils.TextViewWithFont
+        android:id="@+id/time"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:text="8am to 10am"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

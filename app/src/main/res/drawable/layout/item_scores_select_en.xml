@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/roundedtext"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:id="@+id/item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
+
+    <com.amirahmed.mykids.Utils.CircleDisplay
+        android:id="@+id/subject"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="267dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <com.amirahmed.mykids.Utils.TextViewWithFont
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/path_black"/>
+
+
+            <com.amirahmed.mykids.Utils.TextViewWithFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mr/"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/path_black"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <com.amirahmed.mykids.Utils.TextViewWithFont
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/path_black"/>
+
+
+            <com.amirahmed.mykids.Utils.TextViewWithFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject/"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/path_black"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrowexams"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:rotation="180"
+        android:layout_marginStart="10dp"/>
+
+
+</RelativeLayout>

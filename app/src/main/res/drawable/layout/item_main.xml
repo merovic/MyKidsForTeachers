@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/itemlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="13dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="110dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="المعلم"
+                    android:textColor="@color/path_black"
+                    android:textSize="15sp"/>
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="15sp"/>
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الاسم"
+                    android:textSize="15sp"
+                    android:textColor="@color/path_black"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:id="@+id/job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/path_black"
+                    android:text="الحصة الاولى"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <com.amirahmed.mykids.Utils.TextViewWithFont
+            android:id="@+id/fromtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black_p50"/>
+
+        <com.amirahmed.mykids.Utils.TextViewWithFont
+            android:id="@+id/totext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>

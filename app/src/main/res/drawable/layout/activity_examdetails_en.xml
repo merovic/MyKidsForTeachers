@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <com.amirahmed.mykids.Utils.TextViewWithFont
+        android:id="@+id/subjecttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اللغة العربية"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/roundedred"
+        android:textColor="#FFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:layoutDirection="ltr"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:background="@drawable/roundedtext2"
+                        android:src="@drawable/teachericon"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_gravity="end"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/subjectteacher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Teacher"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="محمد احمد"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/black_p50"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:layoutDirection="ltr"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/roundedtext2"
+                        android:src="@drawable/calendaricon"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/subjectdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Exam date"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="١ اكتوبر ٢٠١٧"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/black_p50"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:layoutDirection="ltr"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:background="@drawable/roundedtext2"
+                        android:src="@drawable/besttestresult"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/subjecthalf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Success"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="١٠"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/black_p50"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:layoutDirection="ltr"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/roundedtext2"
+                        android:src="@drawable/besttestresult"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/subjectfinal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Final Score"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="٢٠"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/black_p50"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:layoutDirection="ltr"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/roundedtext2"
+                        android:src="@drawable/documentsicon"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/subjectreq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Exam Req"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="احضار الكشكول"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/black_p50"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1">
+
+            <com.amirahmed.mykids.Utils.CircleDisplay
+                android:id="@+id/circleDisplayexam"
+                android:layout_width="72dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center"/>
+
+            <com.amirahmed.mykids.Utils.TextViewWithFont
+                android:id="@+id/subjectpercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Percentage"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layoutDirection="ltr"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/rounded_messages"
+                        android:src="@drawable/scoreboardicon"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/subjectscore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Exam Score"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="١٨"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/black_p50"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="20dp"
+                        android:layoutDirection="ltr"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/rounded_messages"
+                            android:src="@drawable/chaticon"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/subjectcomment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Teacher Comment"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#000"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="الطالب اصبح افضل الان"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"
+                                android:textColor="@color/black_p50"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

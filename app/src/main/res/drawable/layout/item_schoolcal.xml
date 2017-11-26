@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#375C8C"
+            android:orientation="vertical">
+
+            <com.amirahmed.mykids.Utils.TextViewWithFont
+                android:id="@+id/eventname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event name"
+                android:textColor="@color/cardview_light_background"
+                android:layout_gravity="center"
+                android:padding="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/cardview_light_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#375C8C"
+            android:orientation="horizontal">
+
+            <com.amirahmed.mykids.Utils.TextViewWithFont
+                android:id="@+id/dayname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textColor="#FFF"
+                android:text="Day Name"/>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_light_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:id="@+id/date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFF"
+                    android:text="15/11/1435"/>
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:id="@+id/date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#FFF"
+                    android:text="15/11/2017"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

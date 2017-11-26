@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                app:lottie_fileName="CheckMarkSuccessData.json"
+                app:lottie_loop="false"
+                app:lottie_autoPlay="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="تم ارسال الطلب"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="تم ارسال طلبكم بنجاح"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black_p50"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="40dp"
+            android:background="#07C05D" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/rounded_messages"
+                android:src="@drawable/inbox"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="تم استلام الطلب"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="تم اسلام طلبك و سوف يتم تجهيزه قريبا"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black_p50"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/black_p50" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/rounded_messages"
+                android:src="@drawable/preparingmeeting"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="تحت التجهيز"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="الطلب تحت الدراسة و التجهيز و سيتم انجازه قريبا"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black_p50"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/black_p50" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/rounded_messages"
+                android:src="@drawable/like"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="تم تجهيز الطلب"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="تم تجهيز طلبكم برجاء التواصل معنا"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black_p50"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/black_p50" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_messages"
+                android:src="@drawable/delivery"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="تم توصيل الطلب"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginRight="8dp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

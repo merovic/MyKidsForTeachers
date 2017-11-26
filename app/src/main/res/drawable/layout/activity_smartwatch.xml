@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@drawable/loginbackground">
+
+    <LinearLayout
+        android:id="@+id/nowatchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.amirahmed.mykids.Utils.TextViewWithFont
+            android:id="@+id/noassigntext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/assignbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:padding="10dp"
+            android:background="@drawable/roundedabout"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/assignedlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:src="@drawable/wolnex"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:id="@+id/battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Watch Battery Status "/>
+
+                <com.amirahmed.mykids.Utils.CircleDisplay
+                    android:id="@+id/circleDisplay"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/roundedfill"
+            android:orientation="vertical">
+
+
+            <com.amirahmed.mykids.Utils.TextViewWithFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Watch ID: zg4ghx3gjh6c35"/>
+
+            <com.amirahmed.mykids.Utils.TextViewWithFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Watch Status: ON"/>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedabout"
+            android:text="Cancel Pairing"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

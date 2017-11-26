@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearlaycate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layoutDirection="rtl"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="bottom"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/mainmenubutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/buttonchange5"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/notificationsbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/buttonchange4"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/press2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/buttonchange3"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/messagesbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/buttonchange2"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/press"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/buttonchange"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <com.amirahmed.mykidsforteachers.Utils.ClipRevealFrame
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@id/arc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:arc_axisRadius="@dimen/layout_child_offset_tumblr"
+            app:arc_origin="center"
+            app:arc_radius="@dimen/layout_radius_tumblr"
+            app:arc_freeAngle="true">
+
+            <Button
+                android:id="@+id/attendance"
+                android:layout_height="110dp"
+                android:layout_width="180dp"
+                app:arc_angle="0"/>
+
+            <Button
+                android:id="@+id/homework"
+                android:layout_height="160dp"
+                android:layout_width="140dp"
+                app:arc_angle="55"/>
+
+            <Button
+                android:id="@+id/schedule"
+                android:layout_height="160dp"
+                android:layout_width="140dp"
+                app:arc_angle="125"/>
+
+            <Button
+                android:id="@+id/exams"
+                android:layout_height="110dp"
+                android:layout_width="180dp"
+                app:arc_angle="180"/>
+
+            <Button
+                android:id="@+id/scores"
+                android:layout_height="160dp"
+                android:layout_width="140dp"
+                app:arc_angle="235"/>
+
+            <Button
+                android:id="@+id/messages"
+                android:layout_height="160dp"
+                android:layout_width="140dp"
+                app:arc_angle="305"/>
+
+        </com.ogaclejapan.arclayout.ArcLayout>
+
+        <Button
+            android:id="@+id/center_item"
+            android:layout_height="142dp"
+            android:layout_width="142dp"
+            android:layout_gravity="center"/>
+
+
+
+    </com.amirahmed.mykidsforteachers.Utils.ClipRevealFrame>
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="24dp"
+        android:text="+"
+        android:visibility="gone"
+        android:textSize="24sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@drawable/loginbackground">
+
+    <com.amirahmed.mykids.Utils.TextViewWithFont
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Welcome to Mykids Smartwatch Wizard"/>
+
+    <com.amirahmed.mykids.Utils.TextViewWithFont
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Click Scan to Sync your Watch in order to Track your Son"/>
+
+    <Button
+        android:id="@+id/scanbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedabout"
+        android:layout_gravity="center"
+        android:text="Scan"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.amirahmed.mykids.Utils.TextViewWithFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/tumblr_red"
+            android:textSize="18sp"
+            android:text="Your Name"/>
+
+        <com.amirahmed.mykids.Utils.TextViewWithFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:text="Ahmed Mohamed"/>
+
+        <com.amirahmed.mykids.Utils.TextViewWithFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/tumblr_red"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Your Watch ID"/>
+
+        <com.amirahmed.mykids.Utils.TextViewWithFont
+            android:id="@+id/watchid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/finishbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedabout"
+        android:layout_gravity="center"
+        android:text="Finsh"/>
+
+</LinearLayout>

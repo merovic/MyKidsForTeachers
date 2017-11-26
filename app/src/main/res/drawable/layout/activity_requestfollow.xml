@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Request Sent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Request Sent Successfully"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black_p50"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    app:lottie_fileName="CheckMarkSuccessData.json"
+                    app:lottie_loop="false"
+                    app:lottie_autoPlay="true" />
+
+                <ImageView
+                    android:id="@+id/okmark"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:src="@drawable/sentemail"/>
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="25dp"
+            android:background="#07C05D" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="18dp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Request Received"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Request Received and it will be prepared soon"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_p50"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/rounded_messages"
+                android:src="@drawable/inbox"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/black_p50" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="18dp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Under Preparation"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Request under preparation and will be finished soon"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_p50"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/rounded_messages"
+                android:src="@drawable/preparingmeeting"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/black_p50" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="18dp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Request Prepared"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Request prepared contact us for more"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_p50"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/rounded_messages"
+                android:src="@drawable/like"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/black_p50" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="18dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Request Delivered"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_margin="8dp"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_messages"
+                android:src="@drawable/delivery"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFF"
+    android:layoutDirection="rtl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/mykidswide"/>
+
+                <LinearLayout
+                    android:id="@+id/selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:id="@+id/parienttab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/parienttab"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/studenttab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/studenttab"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/parientlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/studentnamefing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/studentnamefing"/>
+
+                    <ImageView
+                        android:id="@+id/stuname"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/studentnamebox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="محمد محمود ابراهيم"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/studentdatefing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/datefing"/>
+
+                    <ImageView
+                        android:id="@+id/studate"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/datebox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="١٤/٤/٢٠٠٦"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/studentattendfing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/attendfing"/>
+
+                    <ImageView
+                        android:id="@+id/stujoin"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/joinbox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="١٤/٤/٢٠١٦"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/studentnatiofing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/natiofing"/>
+
+                    <ImageView
+                        android:id="@+id/stunatio"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/natiobox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="مصرى"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/studentlevelfing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/levelfing"/>
+
+                    <ImageView
+                        android:id="@+id/stulevel"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/level"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="الابتدائية"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/studentclassfing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/classfing"/>
+
+                    <ImageView
+                        android:id="@+id/stuclass"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/classbox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="الاول"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/studentclassroomfing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/classroomfing"/>
+
+                    <ImageView
+                        android:id="@+id/stuclassroom"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/classroombox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="الثالث"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/kidlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/parientnamefing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/parientnamefing"/>
+
+                    <ImageView
+                        android:id="@+id/parname"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/parentnamebox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="محمود ابراهيم احمد"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/parientmobilefing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/mobilefing"/>
+
+                    <ImageView
+                        android:id="@+id/parmobile"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/mobilebox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="٠٠٦٨٧٤٥٤٧٦٥"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/parientemailfing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/emailfing"/>
+
+                    <ImageView
+                        android:id="@+id/paremail"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/emailbox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="محمد محمود ابراهيم"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/parientnatiofing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/natiofing"/>
+
+                    <ImageView
+                        android:id="@+id/parnatio"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/natiobox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="مصرى"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/parientlocationfing"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/locationfing"/>
+
+                    <ImageView
+                        android:id="@+id/paraddress"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/locationbox"/>
+
+                    <com.amirahmed.mykids.Utils.TextViewWithFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="المملكة العربية السعودية"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#126E87"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:background="@drawable/roundedgray"
+                        android:layout_margin="3dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

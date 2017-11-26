@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/monthselection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/currentmonthitem"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/examresults"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                    android:id="@+id/resulttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="نتيجة الاختبار"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/createexam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                    android:id="@+id/createtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:text="انشاء الاختبار"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/examcreatelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:hint="الصف"
+                android:background="@drawable/roundedtext2"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:hint="المرحلة"
+                android:textAlignment="center"
+                android:background="@drawable/roundedtext2"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:hint="المادة"
+                android:textAlignment="center"
+                android:background="@drawable/roundedtext2"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:hint="الفصل"
+                android:textAlignment="center"
+                android:background="@drawable/roundedtext2"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:hint="درجة النجاح"
+                android:background="@drawable/roundedtext2"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:hint="الدرجة النهائية"
+                android:background="@drawable/roundedtext2"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:hint="الحصة"
+                android:textAlignment="center"
+                android:background="@drawable/roundedtext2"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:hint="تاريخ الاختبار"
+                android:background="@drawable/roundedtext2"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/roundedtext2"
+            android:hint="طلبات الاختبار"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedfill"
+            android:text="ارسال"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="#FFFF"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/exams_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="55dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

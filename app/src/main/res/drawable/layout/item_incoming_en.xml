@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/rounded_messages">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cornerleft"
+            android:layout_alignParentRight="true"/>
+
+
+        <LinearLayout
+            android:id="@+id/datalayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="60dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:id="@+id/sendername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"/>
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sender Name: "
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"/>
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date: "
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal">
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"/>
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title: "
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.amirahmed.mykids.Utils.TextViewWithFont
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datalayout"
+            android:padding="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/buttonslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/content"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/cornerright"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/download"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/attachment"/>
+
+                <ImageView
+                    android:id="@+id/reply"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/replyallar"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/incomingmessagescircle"/>
+
+
+</RelativeLayout>

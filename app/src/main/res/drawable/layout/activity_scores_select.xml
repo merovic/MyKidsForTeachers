@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <RelativeLayout
+        android:id="@+id/monthselection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/currentmonthitem"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/last"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:id="@+id/lasttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="التقييم السابق"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/current"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.amirahmed.mykids.Utils.TextViewWithFont
+                    android:id="@+id/currenttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:text="التقييم الحالى"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/scoresseclect_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

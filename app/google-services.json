@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "887327033229",
+    "firebase_url": "https://nano-school.firebaseio.com",
+    "project_id": "nano-school",
+    "storage_bucket": "nano-school.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887327033229:android:d3c7945bfa4fe037",
+        "android_client_info": {
+          "package_name": "com.amirahmed.mykidsforteachers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887327033229-rut718va12013hro6m5l6gikohf12etg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXgV8ixHHRfUTM-vGgJyl7y8UAerZAZxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

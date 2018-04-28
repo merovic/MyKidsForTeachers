@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+        android:id="@+id/classestextmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الفصول"
+        android:textColor="#FFFF"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundedfill"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="60dp"
+        android:paddingLeft="60dp"/>
+
+    <RelativeLayout
+        android:id="@+id/studentselection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/currentmonthitem"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/notifitab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                    android:id="@+id/notifitabtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="اشعارات"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/messagestab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                    android:id="@+id/messagestabtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:text="رسائل"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/examstab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                    android:id="@+id/examstabtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:text="اختبارات"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/evaluationtab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                    android:id="@+id/evaluationtabtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:text="تقييم"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/attendtab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                    android:id="@+id/attendtabtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:text="غياب"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scheduletab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                    android:id="@+id/scheduletabtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:text="الجدول"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/schedulelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/schedule_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/studentlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <include layout="@layout/fragment_studentlist"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/examslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_exams"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/messageslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_notificationsandmessages"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

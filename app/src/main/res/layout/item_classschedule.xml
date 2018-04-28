@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp">
+
+    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:text="٧ ص"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#E1C1BD"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#DC715B"/>
+
+        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+            android:id="@+id/className"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#DC715B"
+            android:text="الحصة الثالثة (اللغة العربية)"/>
+
+    </LinearLayout>
+
+    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:text="٨ ص"/>
+
+</LinearLayout>

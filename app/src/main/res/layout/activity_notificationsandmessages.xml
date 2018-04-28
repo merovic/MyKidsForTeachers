@@ -9,24 +9,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
+        android:visibility="gone"
         android:orientation="horizontal">
 
-        <EditText
-            android:layout_width="45dp"
-            android:layout_height="40dp"
-            android:layout_margin="5dp"
-            android:hint="الصف"
-            android:textAlignment="center"
-            android:background="@drawable/roundedtext2"
+        <Spinner
+            android:id="@+id/classs"
+            style="@style/spinner_style"
             android:layout_weight="1"/>
 
-        <EditText
-            android:layout_width="45dp"
-            android:layout_height="40dp"
-            android:layout_margin="5dp"
-            android:textAlignment="center"
-            android:hint="المرحلة"
-            android:background="@drawable/roundedtext2"
+        <Spinner
+            android:id="@+id/level"
+            style="@style/spinner_style"
             android:layout_weight="1"/>
 
     </LinearLayout>
@@ -35,40 +28,48 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:visibility="gone"
         android:orientation="horizontal">
 
         <EditText
-            android:layout_width="45dp"
-            android:layout_height="40dp"
-            android:layout_margin="5dp"
-            android:hint="الحصة"
-            android:textAlignment="center"
-            android:background="@drawable/roundedtext2"
+            android:id="@+id/dateedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:hint="التاريخ"
+            android:background="@drawable/roundedtext2"/>
+
+        <com.amirahmed.mykidsforteachers.Utils.MultiSelectionSpinner
+            android:id="@+id/student"
+            style="@style/spinner_style"
             android:layout_weight="1"/>
 
-        <EditText
-            android:layout_width="45dp"
-            android:layout_height="40dp"
-            android:layout_margin="5dp"
-            android:textAlignment="center"
-            android:hint="الفصل"
-            android:background="@drawable/roundedtext2"
+        <Spinner
+            android:id="@+id/classroom"
+            style="@style/spinner_style"
             android:layout_weight="1"/>
+
+
 
     </LinearLayout>
 
     <EditText
+        android:id="@+id/edit5"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
         android:hint="الحصة"
         android:textAlignment="center"
         android:background="@drawable/roundedtext2"/>
 
     <EditText
+        android:id="@+id/edit6"
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:layout_margin="5dp"

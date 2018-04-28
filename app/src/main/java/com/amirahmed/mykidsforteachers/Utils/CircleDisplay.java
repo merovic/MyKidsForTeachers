@@ -289,6 +289,23 @@ public class CircleDisplay extends View implements OnGestureListener {
     }
 
     /**
+     +     * set the color of the Inner circle
+     +     *
+     +     * @param color
+     +     */
+    public void setInnerCircleColor(int color) {
+
+                mInnerCirclePaint.setColor(color);
+    }
+
+
+    public void setTextColor(int color) {
+                mTextPaint.setColor(color);
+           }
+
+
+
+    /**
      * set the duration of the drawing animation in milliseconds
      * 
      * @param durationmillis

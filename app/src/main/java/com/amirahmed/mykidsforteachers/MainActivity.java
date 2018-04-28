@@ -17,12 +17,14 @@ import android.view.WindowManager;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.amirahmed.mykidsforteachers.Activities.ExamsActivity;
 import com.amirahmed.mykidsforteachers.Activities.NotificationsandMessagesActivity;
+import com.amirahmed.mykidsforteachers.Activities.TestActivity;
 import com.amirahmed.mykidsforteachers.Utils.AnimatorUtils;
 import com.amirahmed.mykidsforteachers.Utils.ClipRevealFrame;
 import com.amirahmed.mykidsforteachers.Utils.TinyDB;
@@ -74,6 +76,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
         b5.setBackgroundResource(R.drawable.mainchange5);
         b6.setBackgroundResource(R.drawable.mainchange6);
         b7.setBackgroundResource(R.drawable.mainchange7);
+
+        ImageView img3 = findViewById(R.id.notificationsbutton);
+        img3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this , NotificationsandMessagesActivity.class );
+                tinydb.putString("state","notifications");
+                startActivity(intent);
+            }
+        });
 
         /*int language = tinydb.getInt("language");
 
@@ -135,8 +148,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         {
             case R.id.schedule :
                 mp.start();
-                /*intent = new Intent(MainActivity.this , ScheduleActivity.class );
-                startActivity(intent);*/
+                intent = new Intent(MainActivity.this , TestActivity.class );
+                tinydb.putInt("language",1);
+                startActivity(intent);
                 break;
             case R.id.homework :
                 mp.start();
@@ -169,8 +183,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.center_item :
                 mp.start();
-                /*intent = new Intent(MainActivity.this , RequestsActivity.class );
-                startActivity(intent);*/
+                intent = new Intent(MainActivity.this , Main2Activity.class);
+                startActivity(intent);
                 break;
 
         }

@@ -73,38 +73,38 @@
 
             <Button
                 android:id="@+id/attendance"
-                android:layout_height="110dp"
-                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_width="170dp"
                 app:arc_angle="0"/>
 
             <Button
                 android:id="@+id/homework"
-                android:layout_height="160dp"
-                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:layout_width="130dp"
                 app:arc_angle="55"/>
 
             <Button
                 android:id="@+id/schedule"
-                android:layout_height="160dp"
-                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:layout_width="130dp"
                 app:arc_angle="125"/>
 
             <Button
                 android:id="@+id/exams"
-                android:layout_height="110dp"
-                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_width="170dp"
                 app:arc_angle="180"/>
 
             <Button
                 android:id="@+id/scores"
-                android:layout_height="160dp"
-                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:layout_width="130dp"
                 app:arc_angle="235"/>
 
             <Button
                 android:id="@+id/messages"
-                android:layout_height="160dp"
-                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:layout_width="130dp"
                 app:arc_angle="305"/>
 
         </com.ogaclejapan.arclayout.ArcLayout>

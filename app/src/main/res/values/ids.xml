@@ -2,4 +2,5 @@
 <resources>
   <item name="arc_layout" type="id"/>
   <item name="note_text" type="id"/>
+    <item name="item_spinner" type="id"/>
 </resources>

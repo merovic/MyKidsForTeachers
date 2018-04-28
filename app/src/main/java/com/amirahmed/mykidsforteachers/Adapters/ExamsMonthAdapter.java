@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.amirahmed.mykidsforteachers.Activities.StudentListActivity;
+import com.amirahmed.mykidsforteachers.Activities.NewClassActivity;
 import com.amirahmed.mykidsforteachers.Models.ExamsMonthItem;
 import com.amirahmed.mykidsforteachers.R;
 import com.amirahmed.mykidsforteachers.Utils.TinyDB;
@@ -18,13 +18,11 @@ import java.util.List;
 
 public class ExamsMonthAdapter extends RecyclerView.Adapter<ExamsMonthAdapter.ExamsViewHolder> {
 
-    List<ExamsMonthItem> monthItems;
+    private List<ExamsMonthItem> monthItems;
 
     public TinyDB tinydb;
 
     public int language;
-
-    String state;
 
     Context context;
 
@@ -39,7 +37,7 @@ public class ExamsMonthAdapter extends RecyclerView.Adapter<ExamsMonthAdapter.Ex
 
         tinydb = new TinyDB(parent.getContext());
         language = tinydb.getInt("language");
-        state = tinydb.getString("state");
+
 
         context = parent.getContext();
 
@@ -49,25 +47,22 @@ public class ExamsMonthAdapter extends RecyclerView.Adapter<ExamsMonthAdapter.Ex
     }
 
     @Override
-    public void onBindViewHolder(ExamsViewHolder holder, final int position) {
+    public void onBindViewHolder(final ExamsViewHolder holder, final int position) {
         holder.level.setText(monthItems.get(position).level);
         holder.classroom.setText(monthItems.get(position).classroom);
-        holder.date.setText(monthItems.get(position).date);
-        holder.subject.setText(monthItems.get(position).subject);
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(context, StudentListActivity.class);
+                Intent intent = new Intent(context, NewClassActivity.class);
+                intent.putExtra("className",holder.classroom.getText().toString());
                 context.startActivity(intent);
+
+
 
             }
         });
-
-        /*YoYo.with(Techniques.BounceIn)
-                .duration(1950)
-                .playOn(holder.itemView);*/
 
     }
 
@@ -79,23 +74,29 @@ public class ExamsMonthAdapter extends RecyclerView.Adapter<ExamsMonthAdapter.Ex
     class ExamsViewHolder extends RecyclerView.ViewHolder {
         TextView level;
         TextView classroom;
-        TextView date;
-        TextView subject;
+        TextView description;
+        TextView button;
         Context context;
 
         ExamsViewHolder(View itemView) {
             super(itemView);
             context = itemView.getContext();
             level = itemView.findViewById(R.id.level);
-            date = itemView.findViewById(R.id.date);
             classroom = itemView.findViewById(R.id.classroom);
-            subject = itemView.findViewById(R.id.subject);
+            description = itemView.findViewById(R.id.disk);
+            button = itemView.findViewById(R.id.button2);
 
-            if(!state.equals("exams"))
+
+
+            if(language==1)
             {
-                date.setVisibility(View.GONE);
-                subject.setVisibility(View.GONE);
-            }
+                description.setText("اطلع على نتائج و تقارير الفصل او قم بتعديلها");
+                button.setText("زيارة الفصل");
+            }else
+                {
+                    description.setText("Check results an reports of the class or modify it");
+                    button.setText("Visit Class");
+                }
 
         }
     }

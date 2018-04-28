@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.amirahmed.mykidsforteachers">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,23 +13,126 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+
         <activity android:name=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Activities.ExamsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.ExamSubmissionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.NotificationsandMessagesActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.ScheduleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.TestActivity"/>
+
+        <!-- ###  listener service listen to firebase messages ### -->
+
+        <service android:name=".Utils.FCMService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- ###  Register service get token and send it to service  ### -->
+        <service android:name=".Utils.FCMRegistrationService"/>
+
+        <!-- ###  Service response to token refresh event  ### -->
+        <service
+            android:name=".Utils.FCMTokenRefreshListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Main2Activity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Utils.SplashScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.ExamsActivity"
-                  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.PlanActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.ClassActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.EvaluationInteractionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.StudentsReportsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.ClassesReportsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.NewClassActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".Activities.MessagesActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.StudentsReportsActivity2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.TeachersMessagingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".Activities.InboxActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.NotificationsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.NotificationsDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.AboutApplicationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.AboutSchoolActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.ClassesToReportActivity"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".Activities.StudentListActivity"
-                  android:screenOrientation="portrait"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
 
-        <activity android:name=".Activities.ExamSubmissionActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.NotificationsandMessagesActivity"
-                  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.MapsActivity"
+            android:label="@string/title_activity_maps">
+        </activity>
     </application>
 
 </manifest>

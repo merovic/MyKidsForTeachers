@@ -1,52 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
-    android:layout_marginTop="30dp"
-    android:layout_marginBottom="30dp"
-    android:layout_marginLeft="40dp"
-    android:layout_centerHorizontal="true">
+              android:background="@drawable/roundedframecolor"
+              android:padding="20dp"
+              android:layout_margin="10dp"
+              android:layout_centerHorizontal="true">
 
-    <LinearLayout
+
+    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+        android:id="@+id/classroom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/roundedtext2">
-
+        android:layout_gravity="center"
+        android:text="١ / ٢"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/roundedschedule3"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
 
         <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
             android:id="@+id/level"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
             android:text="المرحلة الاعدادية"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"/>
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"/>
 
-        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
-            android:id="@+id/classroom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="الفصل ٣/١"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"/>
+    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+        android:id="@+id/disk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="اطلع على نتائج و تقارير الفصل او قم بتعديلها"
+        android:textColor="@color/black_p50"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"/>
 
-        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="١٢-٤-٢٠١٨"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundedbuttoncyan"
+        android:text="زيارة الفصل"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/visitclass"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="#FFF"/>
 
-        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
-            android:id="@+id/subject"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="اللغة العربية"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"/>
 
-    </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

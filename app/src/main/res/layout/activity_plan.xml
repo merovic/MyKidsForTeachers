@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/toolbar_actionbar_en"
+        layout="@layout/toolbar_default_en"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:background="@drawable/roundedtext3">
+
+        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عنوان الدرس *"
+            android:textColor="#005549"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:textAlignment="textStart"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:background="@drawable/roundedblank"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:background="@drawable/roundedtext3">
+
+        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الاهداف *"
+            android:textColor="#005549"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:textAlignment="textStart"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:background="@drawable/roundedblank"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:background="@drawable/roundedtext3">
+
+        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الواجب *"
+            android:textColor="#005549"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:textAlignment="textStart"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:background="@drawable/roundedblank"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حفظ"
+        android:textColor="#FFF"
+        android:background="@drawable/roundedfill"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

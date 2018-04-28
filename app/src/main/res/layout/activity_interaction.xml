@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include
+        android:id="@+id/toolbar_actionbar_en"
+        layout="@layout/toolbar_default_en"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:background="#FFF"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+            android:id="@+id/slogan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="قم بتقييم سلوك الطالب"/>
+
+        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+            android:id="@+id/studentname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#59C7CB"
+            android:layout_marginRight="5dp"
+            android:textSize="10sp"
+            android:text="حسام بهاء الدين"/>
+
+        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+            android:id="@+id/slogan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textSize="10sp"
+            android:text="على النحو التالى"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_p50"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFF">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/black_p50"/>
+
+            <ImageView
+                android:id="@+id/st1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/redx"/>
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/homework2"/>
+
+            <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_centerHorizontal="true"
+                android:text="الواجب"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFF">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/black_p50"/>
+
+            <ImageView
+                android:id="@+id/st2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/checkgreen"/>
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/interaction2"/>
+
+            <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img2"
+                android:layout_centerHorizontal="true"
+                android:text="التفاعل"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFF">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/black_p50"/>
+
+            <ImageView
+                android:id="@+id/st3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/checkgreen"/>
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/attention2"/>
+
+            <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img3"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="الانتباه"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_p50"/>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/black_p50"/>
+
+            <ImageView
+                android:id="@+id/st4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/checkgreen"/>
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/attention2"
+                android:layout_centerHorizontal="true"/>
+
+            <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img4"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="الكتابة"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/black_p50"/>
+
+            <ImageView
+                android:id="@+id/st5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/redx"/>
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/books2"
+                android:layout_centerHorizontal="true"/>
+
+            <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img5"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="احضار الكتاب"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/black_p50"/>
+
+            <ImageView
+                android:id="@+id/st6"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/checkgreen"/>
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/teacher_respect2"
+                android:layout_centerHorizontal="true"/>
+
+            <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img6"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="احترام المعلم"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_p50"/>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/black_p50"/>
+
+            <ImageView
+                android:id="@+id/st7"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/checkgreen"/>
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/general2"
+                android:layout_centerHorizontal="true"/>
+
+            <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img7"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="عام"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/black_p50"/>
+
+            <ImageView
+                android:id="@+id/st8"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/checkgreen"/>
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/advanced2"
+                android:layout_centerHorizontal="true"/>
+
+            <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img8"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="متطور"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/black_p50"/>
+
+            <ImageView
+                android:id="@+id/st9"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/redx"/>
+
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/fighting2"
+                android:layout_centerHorizontal="true"/>
+
+            <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+                android:id="@+id/text9"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img9"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:text="الشجار"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/commentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:background="@drawable/roundedframebold">
+
+        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اترك تعليق بشأن هذا الطالب *"
+            android:textColor="#005549"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textAlignment="textStart"
+            android:inputType="textMultiLine"
+            android:background="@drawable/roundedblank"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundedmaincolor"
+        android:layout_gravity="center"
+        android:textColor="#FFFF"
+        android:text="تقييم"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:drawableRight="@drawable/ic_check_white_18dp"
+        android:paddingRight="35dp"
+        android:paddingLeft="15dp"/>
+
+</LinearLayout>

@@ -1,58 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:layout_marginTop="30dp"
-              android:layout_marginBottom="30dp"
-              android:layout_marginLeft="30dp"
+              android:layout_margin="5dp"
+              android:background="@drawable/roundedframe"
               android:layout_centerHorizontal="true">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/studentpic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#018F7D"
+            android:src="@drawable/kidround"
+            android:layout_gravity="center"/>
+
+
+    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+        android:id="@+id/studentname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="محمد احمد مصطفى"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/roundedtext2">
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center">
 
-        <ImageView
-            android:id="@+id/studentpic"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="5dp"/>
 
-        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
-            android:id="@+id/studentname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/absentbutton"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:text="غائب"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:background="@drawable/roundedred"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/absencewithbutton"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:text="غائب بعزر"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:background="@drawable/roundedorange"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/notabsencebutton"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:text="حاضر"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:background="@drawable/roundedgreen"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 
-    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
-        android:id="@+id/absent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="غائب"
-        android:textColor="#FFF"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:visibility="gone"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="15dp"
-        android:background="#E53935"/>
 
-    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
-        android:id="@+id/absentwith"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="غائب بعزر"
-        android:textColor="#FFF"
-        android:visibility="gone"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="15dp"
-        android:background="#F4511E"/>
-
-</RelativeLayout>
+</LinearLayout>

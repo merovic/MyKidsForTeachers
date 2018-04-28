@@ -16,6 +16,11 @@ public class ExamsMonthItem {
         this.subject = subject;
     }
 
+    public ExamsMonthItem(String date, String subject) {
+        this.date = date;
+        this.subject = subject;
+    }
+
     public String getLevel() {
         return level;
     }

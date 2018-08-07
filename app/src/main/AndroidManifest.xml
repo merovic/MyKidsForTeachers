@@ -116,6 +116,8 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".Activities.ClassesToReportActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait"/>
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

@@ -74,7 +74,7 @@
                             android:padding="7dp"
                             android:text="الحصة الثالثة - رياضيات - فصل موز"
                             android:textColor="#FFF"
-                            android:textSize="12sp"/>
+                            android:textSize="10sp"/>
 
                         <ImageView
                             android:layout_width="40dp"
@@ -113,7 +113,7 @@
                             android:padding="7dp"
                             android:background="#3D86B7"
                             android:textColor="#FFF"
-                            android:textSize="12sp"
+                            android:textSize="10sp"
                             android:layout_gravity="center"
                             android:text="اجتماع اةليائ الامور اليوم الموافق السبت"/>
 
@@ -210,7 +210,7 @@
                             android:padding="7dp"
                             android:background="#39AA93"
                             android:textColor="#FFF"
-                            android:textSize="12sp"
+                            android:textSize="10sp"
                             android:layout_gravity="center"
                             android:text="اجتماع اةليائ الامور اليوم الموافق السبت"/>
 
@@ -251,7 +251,7 @@
                             android:padding="7dp"
                             android:background="#324F5E"
                             android:textColor="#FFF"
-                            android:textSize="12sp"
+                            android:textSize="10sp"
                             android:layout_gravity="center"
                             android:text="اجتماع اةليائ الامور اليوم الموافق السبت"/>
 

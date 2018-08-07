@@ -23,8 +23,8 @@
         android:layoutDirection="rtl">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:src="@drawable/avatarlogin"
             android:layout_gravity="center"
             android:layout_margin="5dp"/>
@@ -61,8 +61,8 @@
         android:layoutDirection="rtl">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:src="@drawable/locker"
             android:layout_gravity="center"
             android:layout_margin="5dp"/>
@@ -112,6 +112,7 @@
         android:background="@color/black_p50"/>
 
     <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+        android:id="@+id/resetpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="هل نسيت كلمة السر ؟"

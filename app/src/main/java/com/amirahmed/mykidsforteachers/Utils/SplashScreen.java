@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.amirahmed.mykidsforteachers.Activities.LoginActivity;
@@ -21,6 +23,9 @@ public class SplashScreen extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
 
         tinydb = new TinyDB(getApplicationContext());
@@ -65,7 +70,7 @@ public class SplashScreen extends Activity {
         });
 
         ImageView splash = findViewById(R.id.splash);
-        Glide.with(this).load(R.drawable.splashscreen).into(splash);
+        Glide.with(this).load(R.drawable.bg3).into(splash);
 
 
 

@@ -59,6 +59,7 @@ public class ClassActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class);
 
+
         tinyDB = new TinyDB(this);
         state = tinyDB.getString("state");
         thatIS = tinyDB.getString("that is");

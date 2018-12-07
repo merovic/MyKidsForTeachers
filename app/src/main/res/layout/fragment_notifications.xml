@@ -4,6 +4,17 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#018F7D"
+        android:text="هذا الاشعار سيتم ارساله الى جميع طلاب الفصل"/>
+
     <LinearLayout
         android:id="@+id/notificationtitle"
         android:layout_width="match_parent"

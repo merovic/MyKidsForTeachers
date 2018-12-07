@@ -43,10 +43,28 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textAlignment="center"
+        android:visibility="gone"
         android:text="اطلع على نتائج و تقارير الفصل او قم بتعديلها"
         android:textColor="@color/black_p50"
         android:layout_marginTop="15dp"
         android:textSize="12sp"/>
+
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:background="@drawable/roundedbuttoncyan"
+        android:text="تقارير الفصول"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/visitclass"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="#FFF"/>
 
     <Button
         android:id="@+id/button2"
@@ -56,7 +74,7 @@
         android:layout_marginTop="15dp"
         android:textSize="12sp"
         android:background="@drawable/roundedbuttoncyan"
-        android:text="زيارة الفصل"
+        android:text="تقارير الطلاب"
         android:textStyle="bold"
         android:drawableRight="@drawable/visitclass"
         android:paddingRight="15dp"

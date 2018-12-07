@@ -2,14 +2,12 @@ package com.amirahmed.mykidsforteachers.Adapters;
 
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.amirahmed.mykidsforteachers.Activities.PlanActivity;
 import com.amirahmed.mykidsforteachers.Models.ScheduleItem;
 import com.amirahmed.mykidsforteachers.R;
 import com.amirahmed.mykidsforteachers.Utils.TinyDB;
@@ -90,14 +88,6 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.Schedu
             classRoom = itemView.findViewById(R.id.classRoom);
             from = itemView.findViewById(R.id.fromtext);
             to = itemView.findViewById(R.id.totext);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(context, PlanActivity.class);
-                    context.startActivity(intent);
-                }
-            });
 
 
         }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/roundedframecolor"
+              android:padding="20dp"
+              android:layout_margin="10dp"
+              android:layout_centerHorizontal="true">
+
+
+    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+        android:id="@+id/classroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="١ / ٢"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/roundedschedule3"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
+
+    <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+        android:id="@+id/classname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="فصل ١"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -39,9 +39,9 @@ public class AboutApplicationActivity extends Activity {
         {
             View aboutPage = new AboutPage(this)
                     .isRTL(true)
-                    .setImage(R.drawable.nanoschool)
+                    .setImage(R.drawable.logotrans2)
                     .addItem(new Element().setTitle("Version 1.0"))
-                    .setDescription("نانو سكول ")
+                    .setDescription("نانو سكول fgdgidfhgiudfgiudhfgiudhfiguhduifghdiufhgiudhfgiuhdfiughdiufhgiudfhgiudhfiughdiufhgiduhfgiudhfgiuhdifughdiufhgiduhfgiudhfgiudhfiguhdfiughdiufhgiduhfgiudhfiguhdifguhdiufghiduhfgiudhfgiuhdifguhdifughdiufhgiuhdiughfiduhfgiudhgifuhiuhdgiuhiduhfgiudhfgiudh")
                     .addGroup("تواصل معنا")
                     .addItem(Email())
                     .addItem(Website())

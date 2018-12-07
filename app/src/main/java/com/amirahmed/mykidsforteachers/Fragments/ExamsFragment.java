@@ -78,7 +78,7 @@ public class ExamsFragment extends Fragment implements AdapterView.OnItemSelecte
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_exams, container, false);
     }
 
@@ -157,7 +157,7 @@ public class ExamsFragment extends Fragment implements AdapterView.OnItemSelecte
 
             create.setText("انشاء الاختبار");
 
-            subjects.add("اسم المادة *");
+            subjects.add("اختيار المادة *");
             subjects.add("لغة عربية");
             subjects.add("تربية دينية");
             subjects.add("خط عربى");
@@ -190,7 +190,7 @@ public class ExamsFragment extends Fragment implements AdapterView.OnItemSelecte
 
                 create.setText("Create Exam");
 
-                subjects.add("Subject Name *");
+                subjects.add("Select Subject *");
                 subjects.add("Arabic");
                 subjects.add("Relation");
                 subjects.add("Arabic Font");

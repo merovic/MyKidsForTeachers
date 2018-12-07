@@ -118,6 +118,14 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".Activities.LoginActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.ReplayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.SchoolCalenderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.SmartSchoolActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.TasksActivity"
+            android:screenOrientation="portrait"/>
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

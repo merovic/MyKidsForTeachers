@@ -118,12 +118,12 @@ public class AttendanceAdapter extends RecyclerView.Adapter<AttendanceAdapter.At
             if(language==1)
             {
                 absent.setText("غائب");
-                absentwith.setText("غائب بعزر");
+                absentwith.setText("متأخر");
                 notabsent.setText("حاضر");
             }else
                 {
                     absent.setText("Absent");
-                    absentwith.setText("Absent with Excuse");
+                    absentwith.setText("Late");
                     notabsent.setText("Present");
                 }
 

@@ -2,6 +2,7 @@ package com.amirahmed.mykidsforteachers.Fragments;
 
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
@@ -22,7 +23,7 @@ public class NotificationsFragment extends Fragment {
 
     LinearLayout layout,contentlayout;
 
-    TextView textView,textView2;
+    TextView textView,textView2,slogan;
 
     TextInputLayout textInputLayout;
 
@@ -36,7 +37,7 @@ public class NotificationsFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_notifications, container, false);
     }
 
@@ -53,6 +54,7 @@ public class NotificationsFragment extends Fragment {
 
         textView = getActivity().findViewById(R.id.subjectdatenoti);
         textView2 = getActivity().findViewById(R.id.contect);
+        slogan = getActivity().findViewById(R.id.slogan);
 
         textInputLayout = getActivity().findViewById(R.id.text);
 
@@ -68,6 +70,8 @@ public class NotificationsFragment extends Fragment {
             textInputLayout.setHint("عنوان الاشعار *");
             textView2.setText("تفاصيل الاشعار *");
 
+            slogan.setText("هذا الاشعار سيتم ارساله الى جميع طلاب الفصل");
+
             button.setText("نشر الاشعار");
 
         }else
@@ -78,6 +82,7 @@ public class NotificationsFragment extends Fragment {
                 textInputLayout.setHint("Notification Title *");
                 textView2.setText("Notification Details *");
 
+                slogan.setText("This Notification Would be Sent to All Class Students");
 
                 button.setText("Publish Notification");
             }

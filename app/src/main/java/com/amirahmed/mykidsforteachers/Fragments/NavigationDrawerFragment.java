@@ -1,4 +1,4 @@
-package com.amirahmed.mykidsforteachers.Activities;
+package com.amirahmed.mykidsforteachers.Fragments;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -131,21 +131,25 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
         List<NavigationItem> items = new ArrayList<>();
         if(language==1)
         {
-            items.add(new NavigationItem("الجدول و الخطة الاسبوعية", getResources().getDrawable(R.drawable.calender)));
+            items.add(new NavigationItem("الجدول الأسبوعى", getResources().getDrawable(R.drawable.calender)));
             items.add(new NavigationItem("الفصول الدراسية", getResources().getDrawable(R.drawable.study)));
             items.add(new NavigationItem("رسائل هيئة التدريس", getResources().getDrawable(R.drawable.envelope)));
-            items.add(new NavigationItem("تقارير الفصول", getResources().getDrawable(R.drawable.piechart)));
-            items.add(new NavigationItem("تقارير الطلاب", getResources().getDrawable(R.drawable.barchart)));
+            items.add(new NavigationItem("التقارير", getResources().getDrawable(R.drawable.piechart)));
+            items.add(new NavigationItem("المدرسة الذكية", getResources().getDrawable(R.drawable.interactivity3)));
+            items.add(new NavigationItem("التقويم الدراسى", getResources().getDrawable(R.drawable.calender)));
+            items.add(new NavigationItem("المهام", getResources().getDrawable(R.drawable.taskspicblacksmall)));
             items.add(new NavigationItem("الاعدادات", getResources().getDrawable(R.drawable.settings)));
             items.add(new NavigationItem("عن التطبيق", getResources().getDrawable(R.drawable.aboutplanet)));
             items.add(new NavigationItem("تسجيل الخروج", getResources().getDrawable(R.drawable.exit)));
         }else
             {
-                items.add(new NavigationItem("Schedule and Plan ", getResources().getDrawable(R.drawable.calender)));
+                items.add(new NavigationItem("Weekly Schedule", getResources().getDrawable(R.drawable.calender)));
                 items.add(new NavigationItem("Classes", getResources().getDrawable(R.drawable.study)));
                 items.add(new NavigationItem("Teachers Messages", getResources().getDrawable(R.drawable.envelope)));
-                items.add(new NavigationItem("Classes Reports", getResources().getDrawable(R.drawable.piechart)));
-                items.add(new NavigationItem("Students Reports", getResources().getDrawable(R.drawable.barchart)));
+                items.add(new NavigationItem("Reports", getResources().getDrawable(R.drawable.piechart)));
+                items.add(new NavigationItem("Smart School", getResources().getDrawable(R.drawable.interactivity3)));
+                items.add(new NavigationItem("Calendar", getResources().getDrawable(R.drawable.calender)));
+                items.add(new NavigationItem("Tasks", getResources().getDrawable(R.drawable.taskspicblacksmall)));
                 items.add(new NavigationItem("Setting", getResources().getDrawable(R.drawable.settings)));
                 items.add(new NavigationItem("About", getResources().getDrawable(R.drawable.aboutplanet)));
                 items.add(new NavigationItem("Sign Out", getResources().getDrawable(R.drawable.exit)));

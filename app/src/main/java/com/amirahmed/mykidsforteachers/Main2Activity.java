@@ -1,9 +1,13 @@
 package com.amirahmed.mykidsforteachers;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,14 +20,19 @@ import com.amirahmed.mykidsforteachers.Activities.AboutSchoolActivity;
 import com.amirahmed.mykidsforteachers.Activities.ClassesToReportActivity;
 import com.amirahmed.mykidsforteachers.Activities.ExamsActivity;
 import com.amirahmed.mykidsforteachers.Activities.InboxActivity;
-import com.amirahmed.mykidsforteachers.Activities.NavigationDrawerFragment;
+import com.amirahmed.mykidsforteachers.Activities.LoginActivity;
+import com.amirahmed.mykidsforteachers.Fragments.NavigationDrawerFragment;
 import com.amirahmed.mykidsforteachers.Activities.NotificationsActivity;
 import com.amirahmed.mykidsforteachers.Activities.ScheduleActivity;
+import com.amirahmed.mykidsforteachers.Activities.SchoolCalenderActivity;
 import com.amirahmed.mykidsforteachers.Activities.SettingActivity;
-import com.amirahmed.mykidsforteachers.Activities.StudentsReportsActivity2;
+import com.amirahmed.mykidsforteachers.Activities.SmartSchoolActivity;
+import com.amirahmed.mykidsforteachers.Activities.TasksActivity;
 import com.amirahmed.mykidsforteachers.Activities.TeachersMessagingActivity;
 import com.amirahmed.mykidsforteachers.Utils.NavigationDrawerCallbacks;
 import com.amirahmed.mykidsforteachers.Utils.TinyDB;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
@@ -31,6 +40,8 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 
 import java.util.HashMap;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 public class Main2Activity extends Activity implements NavigationDrawerCallbacks,BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
@@ -57,6 +68,7 @@ public class Main2Activity extends Activity implements NavigationDrawerCallbacks
 
     private SliderLayout mDemoSlider;
 
+    TimerTask hourTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +108,7 @@ public class Main2Activity extends Activity implements NavigationDrawerCallbacks
             textView1.setText("الاشعارات");
             textView2.setText("الرسائل");
             textView3.setText("الجدول");
-            textView4.setText("التقارير");
+            textView4.setText("المهام");
 
             notification.setText("اجتماع اةليائ الامور اليوم الموافق السبت");
             message.setText("اجتماع اةليائ الامور اليوم الموافق السبت");
@@ -117,7 +129,7 @@ public class Main2Activity extends Activity implements NavigationDrawerCallbacks
             textView1.setText("Notifications");
             textView2.setText("Messages");
             textView3.setText("Schedule");
-            textView4.setText("Reports");
+            textView4.setText("Tasks");
 
             notification.setText("Parents Day will be next saturday in our school");
             message.setText("Parents Day will be next saturday in our school");
@@ -129,6 +141,9 @@ public class Main2Activity extends Activity implements NavigationDrawerCallbacks
            // aboutmenu.setText("About School");
 
         }
+
+        some();
+
         //mToolbar.setVisibility(View.GONE);
         //setSupportActionBar(mToolbar);
 
@@ -238,6 +253,58 @@ public class Main2Activity extends Activity implements NavigationDrawerCallbacks
 
     }
 
+
+    public void some()
+    {
+        Timer timer = new Timer();
+        hourTask = new TimerTask() {
+            @Override
+            public void run() {
+
+                Handler handler = new Handler(Looper.getMainLooper());
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        if(schedule.getText().equals("الحصة الرابعة - لغة عربية - فصل تفاح"))
+                        {
+
+                            schedule.setText("الحصة الثالثة - رياضيات - فصل موز");
+                            nothing.setText("اجتماع اولياء الامور اليوم الموافق السبت");
+
+                        }else if(schedule.getText().equals("الحصة الثالثة - رياضيات - فصل موز"))
+                        {
+
+                            schedule.setText("الحصة التالية - تربية دينية - فصل بطيخ");
+                            nothing.setText("موعد الأنصراف اليوم متأخر ساعة اضافية");
+
+                        }else
+                            {
+                                schedule.setText("الحصة الرابعة - لغة عربية - فصل تفاح");
+                                nothing.setText("مقابلة ولى الأمر هامة جدا");
+
+                            }
+
+
+
+                        YoYo.with(Techniques.FadeInUp)
+                                .duration(700)
+                                .playOn(schedule);
+
+                        YoYo.with(Techniques.FadeInUp)
+                                .duration(700)
+                                .playOn(nothing);
+
+                    }
+                });
+
+
+            }
+        };
+        timer.schedule(hourTask, 0L, 1000 * 3);
+    }
+
+
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
@@ -261,20 +328,45 @@ public class Main2Activity extends Activity implements NavigationDrawerCallbacks
             startActivity(intent);
         }else if(position==4)
         {
-            Intent intent = new Intent(Main2Activity.this , StudentsReportsActivity2.class );
+            Intent intent = new Intent(Main2Activity.this , SmartSchoolActivity.class);
             startActivity(intent);
-        }else if(position==5)
+        }
+        else if(position==5)
         {
-            Intent intent = new Intent(Main2Activity.this , SettingActivity.class );
+            Intent intent = new Intent(Main2Activity.this , SchoolCalenderActivity.class );
             startActivity(intent);
         }else if(position==6)
         {
-            Intent intent = new Intent(Main2Activity.this , AboutApplicationActivity.class );
+            Intent intent = new Intent(Main2Activity.this , TasksActivity.class );
             startActivity(intent);
         }else if(position==7)
         {
+            Intent intent = new Intent(Main2Activity.this , SettingActivity.class );
+            startActivity(intent);
+        }else if(position==8)
+        {
             Intent intent = new Intent(Main2Activity.this , AboutApplicationActivity.class );
             startActivity(intent);
+        }else if(position==9)
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            if(language==1)
+            {
+                builder.setMessage("هل حقا تريد تسجيل الخروج ؟");
+            }else
+                {
+                    builder.setMessage("Are You Sure You Want to Logout ?");
+                }
+
+            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent intent = new Intent(Main2Activity.this , LoginActivity.class );
+                    startActivity(intent);
+                }
+            });
+            builder.setNegativeButton("No",null);
+            builder.show();
         }
 
     }

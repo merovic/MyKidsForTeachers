@@ -122,7 +122,7 @@
                             android:layout_height="40dp"
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
-                            android:src="@drawable/ic_pie_chart_white_36dp"/>
+                            android:src="@drawable/clock"/>
 
 
 
@@ -135,7 +135,7 @@
                             android:layout_gravity="center"
                             android:textStyle="bold"
                             android:layout_marginTop="3dp"
-                            android:text="التقارير"/>
+                            android:text="الاحداث"/>
 
                     </LinearLayout>
 
@@ -275,6 +275,7 @@
                             android:layout_marginTop="3dp"
                             android:text="الرسائل"/>
 
+
                     </LinearLayout>
 
 
@@ -344,7 +345,7 @@
 
         <fragment
             android:id="@+id/fragment_drawer"
-            android:name="com.amirahmed.mykidsforteachers.Activities.NavigationDrawerFragment"
+            android:name="com.amirahmed.mykidsforteachers.Fragments.NavigationDrawerFragment"
             android:layout_width="@dimen/navigation_drawer_width"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"

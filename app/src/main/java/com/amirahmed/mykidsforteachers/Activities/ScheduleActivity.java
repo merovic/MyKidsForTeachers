@@ -67,12 +67,12 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
             mToolbar.setVisibility(View.VISIBLE);
             mToolbar2.setVisibility(View.GONE);
 
-            mToolbar.setTitle("الجدول و الخطة الاسبوعية");
+            mToolbar.setTitle("الجدول");
 
             TextView textView = mToolbar.findViewById(R.id.toolbartext);
-            textView.setText("الجدول و الخطة الاسبوعية");
+            textView.setText("الجدول");
 
-            getActionBarTextView().setText("الجدول و الخطة الاسبوعية");
+            getActionBarTextView().setText("الجدول");
 
             arrow.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -87,12 +87,12 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
             mToolbar2.setVisibility(View.VISIBLE);
             mToolbar.setVisibility(View.GONE);
 
-            mToolbar2.setTitle("Schedule and Plan");
+            mToolbar2.setTitle("Schedule");
 
             TextView textView = mToolbar2.findViewById(R.id.toolbartext);
-            textView.setText("Schedule and Plan");
+            textView.setText("Schedule");
 
-            getActionBarTextView().setText("Schedule and Plan");
+            getActionBarTextView().setText("Schedule");
 
             arrowen.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -370,13 +370,13 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
 
         if(language==1)
         {
-            schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
+            schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية (غياب)","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
             schedule.add(new ScheduleItem("الحصة\n الثانية", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
             schedule.add(new ScheduleItem("الحصة\n الثالثة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
             schedule.add(new ScheduleItem("الحصة\n الرابعة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
         }else
             {
-                schedule.add(new ScheduleItem("First\n Class", "Arabic","Class Banana","from: 08:00","To: 08:45"));
+                schedule.add(new ScheduleItem("First\n Class", "Arabic (Attendance)","Class Banana","from: 08:00","To: 08:45"));
                 schedule.add(new ScheduleItem("Second\n Class", "Arabic","Class Banana","from: 08:00","To: 08:45"));
                 schedule.add(new ScheduleItem("Third\n Class", "Arabic","Class Banana","from: 08:00","To: 08:45"));
                 schedule.add(new ScheduleItem("Fourth\n Class", "Arabic","Class Banana","from: 08:00","To: 08:45"));
@@ -420,7 +420,7 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
         {
             case R.id.sun2:
                 schedule.clear();
-                schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
+                schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية (غياب)","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الثانية", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الثالثة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الرابعة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
@@ -443,7 +443,7 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.mon2:
                 schedule.clear();
-                schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
+                schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية (غياب)","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الثانية", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الثالثة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الرابعة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
@@ -467,7 +467,7 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tus2:
                 schedule.clear();
-                schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
+                schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية (غياب)","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الثانية", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الثالثة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الرابعة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
@@ -491,7 +491,7 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.wed2:
                 schedule.clear();
-                schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
+                schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية (غياب)","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الثانية", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الثالثة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الرابعة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
@@ -515,7 +515,7 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.thur2:
                 schedule.clear();
-                schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
+                schedule.add(new ScheduleItem("الحصة\n الاولى", "لغة عربية (غياب)","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الثانية", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الثالثة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));
                 schedule.add(new ScheduleItem("الحصة\n الرابعة", "لغة عربية","فصل موز","من: ٠٨:٠٠","الى: ٠٨:٤٥"));

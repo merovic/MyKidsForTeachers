@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -52,9 +53,11 @@ public class ExamSubmissionActivity extends AppCompatActivity implements Adapter
 
     LinearLayout selection,score,comment;
 
-    TextInputLayout scoreint,commentint;
+    TextInputLayout scoreint;
 
-    TextView scoretext,commenttext;
+    TextView commentint,scoretext;
+
+    EditText commenttext;
 
     Button button;
 
@@ -129,7 +132,7 @@ public class ExamSubmissionActivity extends AppCompatActivity implements Adapter
         comment = findViewById(R.id.commentlayout);
 
         scoreint = findViewById(R.id.scoreint);
-        commentint = findViewById(R.id.commentint);
+        commentint = findViewById(R.id.text3);
 
         scoretext = findViewById(R.id.studentscore);
         commenttext = findViewById(R.id.studentcomment);
@@ -154,15 +157,15 @@ public class ExamSubmissionActivity extends AppCompatActivity implements Adapter
             score.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
             comment.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
 
-            scoreint.setHint("درجة الاختبار");
-            commentint.setHint("تعليق");
+            scoreint.setHint("نتيجة التصحيح");
+            commentint.setText("تعليق");
 
             scoretext.setGravity(Gravity.RIGHT);
             scoretext.setGravity(Gravity.RIGHT);
 
             button.setText("اضافة نتيجة");
 
-            students.add("اسم الطالب *");
+            students.add("اختيار الطالب *");
             students.add("احمد ابراهيم");
             students.add("احمد ابراهيم");
             students.add("احمد ابراهيم");
@@ -177,15 +180,15 @@ public class ExamSubmissionActivity extends AppCompatActivity implements Adapter
                 score.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
                 comment.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
 
-                scoreint.setHint("Student Score *");
-                commentint.setHint("Comment");
+                scoreint.setHint("Exam Result");
+                commentint.setText("Comment");
 
                 scoretext.setGravity(Gravity.LEFT);
                 scoretext.setGravity(Gravity.LEFT);
 
                 button.setText("Add Score");
 
-                students.add("Student Name *");
+                students.add("Select Student*");
                 students.add("Ahmed Ibrahim");
                 students.add("Ahmed Ibrahim");
                 students.add("Ahmed Ibrahim");

@@ -81,12 +81,48 @@
 
     </LinearLayout>
 
+
     <LinearLayout
         android:id="@+id/commentlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:background="@drawable/roundedtext3">
+
+        <com.amirahmed.mykidsforteachers.Utils.TextViewWithFont
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تعليق *"
+            android:textColor="#005549"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/studentcomment"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:textAlignment="textStart"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:background="@drawable/roundedblank"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
+        android:visibility="gone"
         android:layout_marginBottom="10dp"
         android:layout_marginRight="23dp"
         android:layout_marginLeft="23dp"
@@ -105,7 +141,6 @@
             android:layout_width="match_parent">
 
             <AutoCompleteTextView
-                android:id="@+id/studentcomment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"

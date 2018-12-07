@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NanoSchoolForTeachers</string>
+    <string name="app_name">Nano Teachers</string>
 
     <string name="note_center"><![CDATA[app:arc_origin=&quot;<b>center</b>&quot;<br/>Full arc of from 270 degrees]]></string>
     <string name="note_left"><![CDATA[app:arc_origin=&quot;<b>left</b>&quot;<br/>Semi arc of from 270 degrees]]></string>

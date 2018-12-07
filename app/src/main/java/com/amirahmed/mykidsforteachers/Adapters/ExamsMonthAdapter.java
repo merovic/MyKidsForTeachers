@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.amirahmed.mykidsforteachers.Activities.NewClassActivity;
@@ -75,7 +76,8 @@ public class ExamsMonthAdapter extends RecyclerView.Adapter<ExamsMonthAdapter.Ex
         TextView level;
         TextView classroom;
         TextView description;
-        TextView button;
+        Button button;
+        Button button2;
         Context context;
 
         ExamsViewHolder(View itemView) {
@@ -85,8 +87,10 @@ public class ExamsMonthAdapter extends RecyclerView.Adapter<ExamsMonthAdapter.Ex
             classroom = itemView.findViewById(R.id.classroom);
             description = itemView.findViewById(R.id.disk);
             button = itemView.findViewById(R.id.button2);
+            button2 = itemView.findViewById(R.id.button3);
 
 
+            button2.setVisibility(View.GONE);
 
             if(language==1)
             {

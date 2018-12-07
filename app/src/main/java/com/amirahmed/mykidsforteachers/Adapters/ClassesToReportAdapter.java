@@ -2,13 +2,16 @@ package com.amirahmed.mykidsforteachers.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.amirahmed.mykidsforteachers.Activities.ClassesReportsActivity;
+import com.amirahmed.mykidsforteachers.Activities.StudentsReportsActivity2;
 import com.amirahmed.mykidsforteachers.Models.ExamsMonthItem;
 import com.amirahmed.mykidsforteachers.R;
 import com.amirahmed.mykidsforteachers.Utils.TinyDB;
@@ -32,6 +35,7 @@ public class ClassesToReportAdapter extends RecyclerView.Adapter<ClassesToReport
         this.monthItems = monthItems;
     }
 
+    @NonNull
     @Override
     public ClassesToReportViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         tinydb = new TinyDB(parent.getContext());
@@ -41,8 +45,7 @@ public class ClassesToReportAdapter extends RecyclerView.Adapter<ClassesToReport
         context = parent.getContext();
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_month, parent, false);
-        ClassesToReportViewHolder eh = new ClassesToReportViewHolder(view);
-        return eh;
+        return new ClassesToReportViewHolder(view);
     }
 
     @Override
@@ -52,6 +55,19 @@ public class ClassesToReportAdapter extends RecyclerView.Adapter<ClassesToReport
         holder.classroom.setText(monthItems.get(position).classroom);
 
         holder.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(context, StudentsReportsActivity2.class);
+                intent.putExtra("className",holder.classroom.getText().toString());
+                context.startActivity(intent);
+
+
+
+            }
+        });
+
+        holder.button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -74,26 +90,29 @@ public class ClassesToReportAdapter extends RecyclerView.Adapter<ClassesToReport
         TextView level;
         TextView classroom;
         TextView description;
-        TextView button;
+        Button button;
+        Button button2;
         Context context;
-        public ClassesToReportViewHolder(View itemView) {
+
+        ClassesToReportViewHolder(View itemView) {
             super(itemView);
             context = itemView.getContext();
             level = itemView.findViewById(R.id.level);
             classroom = itemView.findViewById(R.id.classroom);
             description = itemView.findViewById(R.id.disk);
             button = itemView.findViewById(R.id.button2);
-
-
+            button2 = itemView.findViewById(R.id.button3);
 
             if(language==1)
             {
                 description.setText("اطلع على تقارير الفصل");
-                button.setText("زيارة الفصل");
+                button.setText("تقارير الطلاب");
+                button2.setText("تقارير الفصول");
             }else
             {
                 description.setText("Check reports of the class");
-                button.setText("Visit Class");
+                button.setText("Classes Reports");
+                button2.setText("Students Reports");
             }
         }
     }
